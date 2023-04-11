@@ -41,3 +41,33 @@ const getProducts = async () => {
     displayProductItems(products);
   });
   
+/* Displaying the products */
+const displayProductItems = (items) => {
+    let displayProduct = items.map(
+      (product) => ` 
+                  <div class="swiper-slide">
+                  <div class="card d-flex">
+                    <div class="image"><img src=${product.url} alt=""></div>
+                    <div class="rating">
+                    <span><i class="bx bxs-star"></i></span>
+                    <span><i class="bx bxs-star"></i></span>
+                    <span><i class="bx bxs-star"></i></span>
+                    <span><i class="bx bxs-star"></i></span>
+                    <span><i class="bx bxs-star"></i></span>
+                    </div>
+                    <h4>${product.title}</h4>
+                    <div class="price">
+                      <span>Price</span><span class="color">$${product.price}</span>
+                    </div>
+                    <div class="button btn">Add To Cart+</div>
+                  </div>
+                </div>
+                    `
+    );
+  
+    displayProduct = displayProduct.join("");
+    if (ProductsWrapper) {
+      ProductsWrapper.innerHTML = displayProduct;
+    }
+  };
+  
