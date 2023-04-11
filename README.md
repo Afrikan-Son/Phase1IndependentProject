@@ -8,17 +8,25 @@ For this assessment, I will be working on a food delivery website.
 
 For this project, we will need to Fetch data from a local server running JSON DB server.
 
+# Technologies Used
+
+HTML
+CSS
+JavaScript
+Swiper.js
+
 # Pre-requisite Data
 
 Use the JSON file for the server DB.
 
-# Project Guidelines
-
-As a user, I can:
-
-1. Login or Sign Up.
-
-2. Select different food items.
+# Features
+Responsive design
+Navigation bar with links to home, food, contact us, and about pages
+Search bar for easy navigation to specific food items
+Cart icon that displays the number of items in the customer's cart
+Sign in button that displays a sign in form when clicked
+Filter system for food items based on categories
+Top food items displayed using Swiper.js for an interactive interface
 
 
 
